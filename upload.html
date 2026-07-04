@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Upload{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Upload Study Material</h2>
+
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+    {% if success %}
+    <p class="success">{{ success }}</p>
+    {% endif %}
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <div class="auth-footer">
+        <a href="/dashboard">Back to Dashboard</a>
+    </div>
+</div>
+{% endblock %}
+

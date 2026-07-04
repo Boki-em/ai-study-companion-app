@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Learning Style Quiz{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Learning Style Quiz</h2>
+
+    <form method="POST">
+        <p>1. When learning something new, I prefer:</p>
+        <input type="radio" name="q1" value="visual"> Diagrams and charts<br>
+        <input type="radio" name="q1" value="auditory"> Listening to explanations<br>
+        <input type="radio" name="q1" value="reading"> Reading notes<br>
+        <input type="radio" name="q1" value="kinaesthetic"> Doing hands-on activities<br><br>
+
+        <p>2. I remember information best when I:</p>
+        <input type="radio" name="q2" value="visual"> See it as images<br>
+        <input type="radio" name="q2" value="auditory"> Hear it explained<br>
+        <input type="radio" name="q2" value="reading"> Read it repeatedly<br>
+        <input type="radio" name="q2" value="kinaesthetic"> Practice it myself<br><br>
+
+        <p>3. In class, I prefer:</p>
+        <input type="radio" name="q3" value="visual"> Slides and visuals<br>
+        <input type="radio" name="q3" value="auditory"> Listening to the teacher<br>
+        <input type="radio" name="q3" value="reading"> Taking written notes<br>
+        <input type="radio" name="q3" value="kinaesthetic"> Activities and experiments<br><br>
+
+        <p>4. When revising, I usually:</p>
+        <input type="radio" name="q4" value="visual"> Draw mind maps<br>
+        <input type="radio" name="q4" value="auditory"> Say notes out loud<br>
+        <input type="radio" name="q4" value="reading"> Read notes silently<br>
+        <input type="radio" name="q4" value="kinaesthetic"> Use flashcards or practice<br><br>
+
+        <p>5. I get bored when:</p>
+        <input type="radio" name="q5" value="visual"> There are no visuals<br>
+        <input type="radio" name="q5" value="auditory"> I only read silently<br>
+        <input type="radio" name="q5" value="reading"> I cannot write notes<br>
+        <input type="radio" name="q5" value="kinaesthetic"> I only sit and listen<br><br>
+
+        <p>6. I understand best when I:</p>
+        <input type="radio" name="q6" value="visual"> See examples and diagrams<br>
+        <input type="radio" name="q6" value="auditory"> Hear explanations<br>
+        <input type="radio" name="q6" value="reading"> Read detailed notes<br>
+        <input type="radio" name="q6" value="kinaesthetic"> Try it myself<br><br>
+
+        <p>7. When studying, I prefer:</p>
+        <input type="radio" name="q7" value="visual"> Colourful notes<br>
+        <input type="radio" name="q7" value="auditory"> Group discussions<br>
+        <input type="radio" name="q7" value="reading"> Textbooks and articles<br>
+        <input type="radio" name="q7" value="kinaesthetic"> Practical exercises<br><br>
+
+        <p>8. I remember instructions better when:</p>
+        <input type="radio" name="q8" value="visual"> They are shown visually<br>
+        <input type="radio" name="q8" value="auditory"> They are spoken<br>
+        <input type="radio" name="q8" value="reading"> They are written down<br>
+        <input type="radio" name="q8" value="kinaesthetic"> I try them myself<br><br>
+
+        <p>9. My ideal learning environment is:</p>
+        <input type="radio" name="q9" value="visual"> Visual boards and posters<br>
+        <input type="radio" name="q9" value="auditory"> Quiet listening space<br>
+        <input type="radio" name="q9" value="reading"> A place with books<br>
+        <input type="radio" name="q9" value="kinaesthetic"> Interactive environment<br><br>
+
+        <p>10. I learn fastest when I:</p>
+        <input type="radio" name="q10" value="visual"> Watch demonstrations<br>
+        <input type="radio" name="q10" value="auditory"> Listen carefully<br>
+        <input type="radio" name="q10" value="reading"> Read instructions<br>
+        <input type="radio" name="q10" value="kinaesthetic"> Practice immediately<br><br>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</div>
+{% endblock %}

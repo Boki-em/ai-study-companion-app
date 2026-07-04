@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Study Plan{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Your Personalized Study Plan</h1>
+
+    <p>
+        Learning Style:
+        <strong>{{ learning_style }}</strong>
+    </p>
+
+    <ol>
+        {% for item in plan %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ol>
+
+    <a href="/dashboard">Back to Dashboard</a>
+
+</div>
+
+{% endblock %}

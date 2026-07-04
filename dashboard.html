@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container dashboard">
+    <h1>Dashboard</h1>
+
+    <p>Your learning style: <strong>{{ learning_style }}</strong></p>
+
+    <ul>
+        <li>📂 Upload study materials</li>
+        <li>🧠 Personalized learning</li>
+        <li>📊 Smart assessments</li>
+    </ul>
+
+    <h3>Your Uploaded Files</h3>
+
+{% if files %}
+
+    {% for file in files %}
+        <div class="file-card">
+            📄 {{ file[0] }}
+        </div>
+    {% endfor %}
+
+{% else %}
+
+    <p>No files uploaded yet.</p>
+
+{% endif %}
+
+<form action="/study-plan" method="POST">
+    <button type="submit">Generate Study Plan</button>
+</form>
+
+{% endblock %}
+
+
+

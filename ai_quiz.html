@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Quiz</title>
+</head>
+<body>
+
+<h2>Generated Quiz</h2>
+
+<form>
+
+{% for q in questions %}
+    <p><b>{{ loop.index }}.</b> {{ q.question }}</p>
+    <input type="text" name="q{{ loop.index }}">
+    <br><br>
+{% endfor %}
+
+</form>
+
+<a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+
+</body>
+</html>
